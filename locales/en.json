@@ -1,0 +1,20 @@
+{
+    "title.login.tab": "Iniciar sesion",
+    "login.label.email": "Correo electronico",
+    "login.label.password": "Contrasena",
+    "login.label.button": "Iniciar Sesion",
+    "title.dashboard": "Dashboard",
+    "label.students": "Estudiantes",
+    "label.users": "Usuarios",
+    "label.repords": "Reportes",
+    "label.record": "JMA-Records",
+    "label.navigation": "Navigation",
+    "label.dashboard": "Dashboard",
+    "layout.label.version": "Version:",
+    "layout.footer": "Mejía's",
+    "layout.footer.rights": "Todos los derechos reservados.",
+    "label.user.name": "Name",
+    "label.user.userName": "User",
+    "label.actions": "Actions",
+    "label.new": "Add"
+}

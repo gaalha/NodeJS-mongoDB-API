@@ -1,0 +1,13 @@
+td.dataTables_empty{
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+   .navbar-nav > .user-menu > .dropdown-menu {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        padding: 1px 0 0 0;
+        border-top-width: 0;
+        width: 300px;
+    }
+}
