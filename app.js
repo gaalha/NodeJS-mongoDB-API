@@ -7,7 +7,8 @@ const expressValidator = require('express-validator');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-const mongoDB = 'mongodb://localhost/betterride-evaluation';
+//const mongoDB = 'mongodb://localhost/betterride-evaluation';
+const mongoDB = 'mongodb://root:pass123@ds229474.mlab.com:29474/creativa';
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
@@ -36,7 +37,7 @@ app.use(function(err, req, res, next) {
     res.locals.message = err.message;
     res.locals.error = req.app.get('env') === 'development' ? err : {};
     res.status(err.status || 500);
-    res.render('error');
+    res.json({ error: err })
 });
 
 module.exports = app;
