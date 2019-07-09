@@ -8,8 +8,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 //const mongoDB = 'mongodb://localhost/betterride-evaluation';
-const mongoDB = 'mongodb://root:pass123@ds229474.mlab.com:29474/creativa';
-mongoose.connect(mongoDB);
+//const mongoDB = 'mongodb://root:pass123@ds229474.mlab.com:29474/creativa';
+mongoose.connect('mongodb://root:pass123@ds229474.mlab.com:29474/creativa', { useNewUrlParser: true })
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
