@@ -9,7 +9,8 @@ const cors = require('cors');
 
 //const mongoDB = 'mongodb://localhost/betterride-evaluation';
 //const mongoDB = 'mongodb://root:pass123@ds229474.mlab.com:29474/creativa';
-mongoose.connect('mongodb://root:pass123@ds229474.mlab.com:29474/creativa', { useNewUrlParser: true })
+// mongoose.connect('mongodb://root:pass123@ds229474.mlab.com:29474/creativa', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://admin:123123123@storage-cntdr.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true })
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -17,7 +18,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 const routes = require('./app/routes');
 const app = express();
 
-app.use(cors({origin: 'http://localhost:4200'}));
+app.use(cors({origin: 'http://localhost:8100'}));
 app.use(expressValidator());
 app.use(logger('dev'));
 app.use(bodyParser.json());
