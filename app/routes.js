@@ -5,4 +5,3 @@ module.exports = (app) => {
     app.use('/api/person',          personController);
     app.use('/api/todo',            todoController);
 }
-
