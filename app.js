@@ -18,7 +18,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 const routes = require('./app/routes');
 const app = express();
 
-app.use(cors({origin: 'http://localhost:8100'}));
+app.use(cors({origin: '*'}));
 app.use(expressValidator());
 app.use(logger('dev'));
 app.use(bodyParser.json());
